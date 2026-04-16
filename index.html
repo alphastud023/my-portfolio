@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Jay | Digital Creator & Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0f172a;color:white;scroll-behavior:smooth;}
+section{padding:80px 10%;}
+h2{text-align:center;margin-bottom:30px;color:#38bdf8;}
+
+nav{
+display:flex;justify-content:space-between;
+padding:20px 10%;position:sticky;top:0;
+background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);
+}
+
+nav a{color:white;margin-left:20px;text-decoration:none;}
+
+.hero{
+height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+}
+
+.btn{
+display:inline-block;margin-top:15px;
+padding:10px 20px;background:#38bdf8;color:black;
+border-radius:30px;text-decoration:none;
+}
+
+/* GRID */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:20px;border-radius:15px;text-align:center;
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-10px);}
+
+/* ABOUT */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;align-items:center;
+}
+
+.about img{width:100%;border-radius:20px;}
+
+/* IMAGES */
+.card img{
+width:100%;height:200px;
+object-fit:cover;border-radius:10px;margin-bottom:10px;
+}
+
+/* SLIDER */
+.slider{max-width:700px;margin:auto;position:relative;}
+.slide{display:none;width:100%;border-radius:15px;}
+.active{display:block;}
+
+.prev,.next{
+position:absolute;top:50%;
+transform:translateY(-50%);
+background:black;color:white;border:none;
+padding:10px;border-radius:50%;cursor:pointer;
+}
+.prev{left:10px;} .next{right:10px;}
+
+.dots{text-align:center;margin-top:10px;}
+.dot{height:10px;width:10px;background:gray;border-radius:50%;display:inline-block;margin:5px;cursor:pointer;}
+.dot.active{background:#38bdf8;}
+
+/* LIGHTBOX */
+#lightbox{
+position:fixed;top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.9);display:none;
+justify-content:center;align-items:center;
+}
+#lightbox img{max-width:90%;}
+
+/* CONTACT */
+input,textarea{
+width:100%;padding:10px;margin:10px 0;
+border:none;border-radius:5px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;padding:15px;border-radius:50%;
+text-decoration:none;color:white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.about{grid-template-columns:1fr;}
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.social-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.social-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  margin: 20px 0;
+}
+
+.social-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Platform colors */
+.youtube { background: #ff0000; }
+.tiktok { background: #000000; border: 1px solid #fff; }
+.facebook { background: #1877f2; }
+
+.social-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Follow button */
+.follow-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(45deg, #ff0000, #ff0050);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.follow-btn:hover {
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h1>Alpha Jay</h1>
+<div>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Work</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h2>I Help Brands Grow With Apps & Creative Content</h2>
+<p>I work with clients worldwide to build powerful digital solutions.</p>
+<a href="#hire" class="btn">Work With Me</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+
+<img src="profile.jpg"width="300">
+<div>
+<p><strong>Alpha Jay</strong> is a creative developer, storyteller, and digital innovator passionate about building impactful digital products.</p>
+
+<p>
+She specializes in mobile app development, content creation, and digital brand growth—helping clients turn ideas into real, profitable solutions.
+</p>
+
+<p>
+With a strong focus on creativity and technology, she works with clients globally to deliver engaging, high-quality results.
+</p>
+
+<p>
+She is constantly evolving, learning, and pushing boundaries to create powerful digital experiences.
+</p>
+
+<p>🔥 Follow me for powerful storytelling content and growth strategies.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Services</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Mobile App Development</h3>
+<p>Custom Android apps built for performance and monetization.</p>
+<p><strong>Starting from $300</strong></p>
+</div>
+
+<div class="card">
+<h3>Content Creation</h3>
+<p>High-quality storytelling and viral content creation.</p>
+<p><strong>Starting from $150</strong></p>
+</div>
+
+<div class="card">
+<h3>Brand Growth Strategy</h3>
+<p>Helping brands grow through content and digital strategy.</p>
+<p><strong>Starting from $200</strong></p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Work</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="project1.jpg">
+            <h3>Mobile App</h3>
+            <p>App design and development project.</p>
+        </div>
+
+        <div class="card">
+            <img src="project2.jpg">
+            <h3>Story Content</h3>
+            <p>Creative storytelling content.</p>
+        </div>
+
+        <div class="card">
+            <img src="project3.jpg">
+            <h3>Brand Design</h3>
+            <p>Social media branding project.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SLIDER -->
+<div class="slider">
+<img src="project1.jpg" class="slide active" onclick="openLightbox(this)">
+<img src="project2.jpg" class="slide" onclick="openLightbox(this)">
+<img src="project3.jpg" class="slide" onclick="openLightbox(this)">
+
+<button class="prev" onclick="changeSlide(-1)">❮</button>
+<button class="next" onclick="changeSlide(1)">❯</button>
+
+<div class="dots">
+<span class="dot active" onclick="goToSlide(0)"></span>
+<span class="dot" onclick="goToSlide(1)"></span>
+<span class="dot" onclick="goToSlide(2)"></span>
+</div>
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+<h2>Testimonials</h2>
+<div class="cards">
+<div class="card">"Amazing work and very creative!"</div>
+<div class="card">"Highly professional and reliable."</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section>
+<h2>Pricing</h2>
+<div class="cards">
+<div class="card"><h3>Starter</h3><p>$100</p></div>
+<div class="card"><h3>Professional</h3><p>$500</p></div>
+<div class="card"><h3>Enterprise</h3><p>$1000+</p></div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section>
+<h2>How I Work</h2>
+<div class="cards">
+<div class="card">1. Understanding your idea</div>
+<div class="card">2. Planning & Strategy</div>
+<div class="card">3. Development</div>
+<div class="card">4. Delivery</div>
+</div>
+</section>
+
+<!-- HIRE -->
+<section id="hire">
+<h2>Start a Project</h2>
+
+<a href="https://wa.me/2348143433441" class="btn">Chat on WhatsApp</a><br><br>
+<a href="https://paystack.shop/pay/m1mx9ktti0" class="btn">Pay with Card</a><br><br>
+
+</section>
+
+<section class="social-section">
+  <h2>Connect With Me</h2>
+  <p>Follow me on my social media platforms 👇</p>
+
+  <div class="social-buttons">
+
+    <a href="https://youtube.com/@alphastoryhub" target="_blank" class="social-btn youtube">
+      YouTube
+    </a>
+
+    <a href="https://tiktok.com/@alphastoryhub" target="_blank" class="social-btn tiktok">
+      TikTok
+    </a>
+    
+    <a="https://www.facebook.com/share/18FQUxDQk5/" target="_blank" class="social-btn facebook">
+      Facebook
+    </a>
+  </div>
+
+</section>
+
+</section>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form action="https://formspree.io/f/yourcode" method="POST">
+<input type="text" placeholder="Alpha Jay" required>
+<input type="email" placeholder="alphastud023@gmail.com "required> <textarea placeholder="Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/2348143433441" class="whatsapp">💬</a>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let dots=document.querySelectorAll(".dot");
+let index=0;
+
+function showSlide(i){
+slides.forEach((s,idx)=>{s.classList.remove("active");dots[idx].classList.remove("active");});
+slides[i].classList.add("active");
+dots[i].classList.add("active");
+index=i;
+}
+
+function changeSlide(step){
+index+=step;
+if(index>=slides.length)index=0;
+if(index<0)index=slides.length-1;
+showSlide(index);
+}
+
+function goToSlide(i){showSlide(i);}
+
+setInterval(()=>{changeSlide(1);},4000);
+
+function openLightbox(img){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=img.src;
+}
+
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+</body>
+</html>
